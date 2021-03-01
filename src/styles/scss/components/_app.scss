@@ -1,0 +1,10 @@
+.app {
+    display: grid;
+    grid-template-columns: 98px repeat(auto-fill, minmax(340px, auto));
+    grid-template-rows: 60px 150px repeat(2, 240px);
+    grid-gap: 50px 32px;
+    width: 1280px;
+    height: 880px;
+    margin: 0 auto;
+    padding: 160px;
+}

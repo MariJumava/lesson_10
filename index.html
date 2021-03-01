@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/css/main.min.css">
+    <!--<link rel="stylesheet" href="src/styles/scss/main.scss">-->
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="app">
+
+            <nav class="sidebar">
+                <a href="https://vk.com/" class="sidebar__vk">
+                    <img class="sidebar__item" src="./src/images/icons/logo.png" alt="Vkontakte">
+                </a>
+                <a href="#" class="sidebar__link">
+                    <img class="sidebar__item" src="./src/images/icons/home.png" alt="Home">
+                </a>
+                <a href="#" class="sidebar__link">
+                    <img class="sidebar__item" src="./src/images/icons/list.png" alt="List">
+                </a>
+                <a href="#" class="sidebar__link">
+                    <img class="sidebar__item" src="./src/images/icons/community.png" alt="Community">
+                </a>
+                <a href="#" class="sidebar__link">
+                    <img class="sidebar__item" src="./src/images/icons/mail.png" alt="Mail">
+                </a>
+                <a href="#" class="sidebar__link">
+                    <img class="sidebar__item" src="./src/images/icons/play.png" alt="Listen">
+                </a>
+                <a href="#" class="sidebar__link-statistics">
+                    <img class="sidebar__item" src="./src/images/icons/statistics.png" alt="Statistics">
+                </a>
+                <a href="#" class="sidebar__link">
+                    <img class="sidebar__item" src="./src/images/icons/customization.png" alt="Customization">
+                </a>
+                <label>
+                    <input type="checkbox">
+                    <span class="toggle"></span>
+                </label>
+            </nav>
+
+            <header class="header">
+                <h1 class="header__title">Statistics</h1>
+                <form action="/search/" target="_blank">
+                    <input type="hidden" name="searchid" value="808327">
+                    <input type="search" name="text" required placeholder="Search">
+                </form>
+                <a href="#" class="header__notifications"><img src="./src/images/icons/notification.png" alt="notification"></a>
+                <p class="name">Anya</p>
+                <a href="#" class="header__avatar"><img src="./src/images/people.png" alt="Avatar"></a>
+            </header>
+
+            <div class="card">
+                <div class="card__frends">
+                    <h2 class="subtitle">Friends</h2>
+                    <p class="card__text">271 people</p>
+                </div>
+                <div class="card__visitors">
+                    <h2 class="subtitle">Unique visitors</h2>
+                    <p class="card__text">69 people</p>
+                </div>
+                <div class="card__followers">
+                    <h2 class="subtitle">Followers</h2>
+                    <p class="card__text">288 people</p>
+                </div>
+            </div>
+
+            <div class="audience">
+                <h2 class="subtitle">Audience reach</h2>
+                    <img src="./src/images/charts/graph-line.png">
+            </div>
+
+            <div class="reach">
+                <h2 class="subtitle">Reach by device</h2>
+                <img src="./src/images/charts/circle.png">
+                <img src="./src/images/charts/part-of-a-circle.png"> 
+            </div>
+
+            <div class="gender">
+                <h2 class="subtitle">Gender / Age</h2>
+            </div>
+
+            <div class="geo">
+                <h2 class="subtitle">Geo</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
