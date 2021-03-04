@@ -1,5 +1,10 @@
 .gender {
+    position: relative;
     grid-column: 2 / 4;
     grid-row: 4;
-    background-color: indigo;
+    /*background-color: indigo;*/
+
+    .subtitle {
+        @include componentTitle;
+    }
 }

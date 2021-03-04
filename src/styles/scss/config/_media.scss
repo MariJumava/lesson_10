@@ -1,21 +1,49 @@
+/*@media only screen and (max-width: 1024px) {
+    
+}*/
+
 @media only screen and (max-width: 768px) {
+    
     .app {
+        display: flex;
+        flex-direction: column;
         width: 90%;
+        height: 100%;
+        padding: 0;
     }
 
     .sidebar {
         display: none;
         order: -1;
     }
+
+    .gamburger {
+        display: block;
+    }
+
 }
 
-@media screen and (max-width: 578px) and (max-height: 896px) {
+@media screen and (max-width: 576px) and (max-height: 896px) {
+    
     .app {
         display: flex;
         flex-direction: column;
+        height: 100%;
+        padding: 0;
     }
 
     .header {
         margin-bottom: 2em;
     }
+
+    .sidebar {
+        display: none;
+    }
+
+    .gamburger {
+        display: block;
+    }
+
+    
+    
 }

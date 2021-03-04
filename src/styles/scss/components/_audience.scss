@@ -1,5 +1,12 @@
 .audience {
+    position: relative;
     grid-column: 2 / 4;
     grid-row: 3;
-    background-color: rgb(45, 0, 128);
+    
+    
+   /* background-color: rgb(45, 0, 128);*/
+
+   .subtitle { 
+    @include componentTitle;
+   }
 }

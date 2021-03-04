@@ -1,4 +1,8 @@
 .reach {
-    
-    background-color: hotpink;
+    position: relative;
+   /* background-color: hotpink;*/
+
+   .subtitle {   
+    @include componentTitle;
+   }
 }

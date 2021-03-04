@@ -3,18 +3,15 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+ }
 
 .wrap {
     position: relative;
-    max-width: 1440px;
+    max-width: 1600px;
     min-height: 100vh;
     overflow: hidden;
     margin: 0 auto;
 }
 
-.wrap > div {
-    padding: 1em;
-}

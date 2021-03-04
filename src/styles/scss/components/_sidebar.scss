@@ -2,22 +2,66 @@
     display: grid;
     grid-column: 1;
     grid-row: 1 / 5;
-    grid-template-rows: 1fr repeat(7, 40px) 1fr;
-    align-items: center;
+    grid-template-columns: 80px;
+    grid-template-rows: 1fr repeat(7, 80px) 1fr;
     width: 98px;
-    height: 880px;
-    background-color: rgb(58, 209, 58);
-
-    &__link {
-        text-align: center;
-
-    }
-
+    min-height: 880px;
+    background-color: #FDFDFF;
+    border: 1px solid #EBEBEB;
 }
 
-.sidebar__link-statistics {
-    text-align: left;
+.sidebar__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
+
+.sidebar__link:first-child,
+.sidebar__link:last-child{
+    height: 80px;
+    width: 100%;
+}
+
+.sidebar__link:last-child{
+    align-self: flex-end;
+}
+
+
+svg{
+    fill: #DFE6F1;
+    transition: fill ease .5s;
+}
+
+.sidebar__link:before{
+    visibility: hidden;
+    opacity: 0;
+    content: '';
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    width: 4px;
+    height: 50px;
+    background-color: #7F7FD5;
+    border-radius: 0 5px 5px 0;
+
+    transition: all ease .5s;
+}
+
+.sidebar__link:hover:before {
+    visibility: visible;
+    opacity: 1;
+    background-color: #7F7FD5;
+}
+
+.sidebar__link:hover svg {
+    fill:#7F7FD5;
+}
+
+/* Toggle */
 
 input[type='checkbox']{
     visibility: hidden;
@@ -30,6 +74,7 @@ input[type='checkbox']{
     width: 60px;
     height: 30px;
     background: #fdfdfd;
+    border: 0.5px solid #4F4F4F;
     margin: auto;
     cursor: pointer;
     border-radius: 50px;

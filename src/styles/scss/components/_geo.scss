@@ -1,8 +1,8 @@
 .geo {
-    
-    background-color: rgb(72, 63, 205);
+    position: relative;
+   
 
-    &__title {
+    .subtitle {
         @include componentTitle;
     }
 }
