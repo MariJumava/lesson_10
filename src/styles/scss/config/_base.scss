@@ -4,14 +4,15 @@ html {
 }
 
  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gilroy', sans-serif;
  }
 
+ 
 .wrap {
-    position: relative;
-    max-width: 1600px;
+    width: 1600px;
     min-height: 100vh;
     overflow: hidden;
     margin: 0 auto;
+    background-image: url(/src/images/background/union.png);
 }
 

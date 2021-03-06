@@ -8,7 +8,9 @@
     <title>Dashboard</title>
 </head>
 <body>
+    
     <div class="wrap">
+        
         <div class="app">
 
             <div class="gamburger"></div>
@@ -79,7 +81,7 @@
                     </svg>                        
                 </a>
                 <a href="#" class="sidebar__link">
-                    <svg width="90" height="46">
+                    <svg width="100" height="46">
                         <path d="M60.2677 33.6124H36.7325C36.3277 33.6124 36.0001 33.9137 36.0001 34.2862C36.0001 34.6586 36.3277 34.96 36.7325 34.96H60.2677C60.6725 34.96 61.0001 34.6586 61.0001 34.2862C61.0001 33.9137 60.6725 33.6124 60.2677 33.6124Z" />
                         <path d="M42.6407 22.7862H38.1974C37.7926 22.7862 37.465 23.0876 37.465 23.46V26.8291H43.3732V23.46C43.3732 23.0876 43.0456 22.7862 42.6407 22.7862Z" />
                         <path d="M43.3732 28.1768H37.465V32.2647H43.3732V28.1768Z" />
@@ -105,48 +107,65 @@
                     <h1 class="header__title">Statistics</h1>
                     <form action="/search/" target="_blank">
                         <input type="hidden" name="searchid" value="808327">
-                        <input type="search" name="text" required placeholder="Search">
+                        <input type="search" name="text" required placeholder="&#128270;Search">
                     </form>
                     <a href="#" class="header__notifications"><img src="./src/images/icons/notification.png" alt="notification"></a>
                 </div>
                 <div class="header_people">
                     <p class="header__name">Anya</p>
-                    <a href="#" class="header__avatar"><img src="./src/images/people.png" alt="Avatar"></a>
+                    <a href="#" class="header__avatar"><img src="./src/images/people.png" alt="Avatar"><i class="down"></i></a>
                 </div>    
             </header>
 
             <div class="card">
                 <div class="card__frends">
                     <h2 class="subtitle">Friends</h2>
+                    <p class="point">&#8230;</p>
                     <p class="card__text">271 people</p>
+                    <p class="card__percent">+0,7%&#8593;</p>
                 </div>
                 <div class="card__visitors">
                     <h2 class="subtitle">Unique visitors</h2>
+                    <p class="point">&#8230;</p>
                     <p class="card__text">69 people</p>
+                    <p class="card__percent">-1,7%&#8595;</p>
                 </div>
                 <div class="card__followers">
                     <h2 class="subtitle">Followers</h2>
+                    <p class="point">&#8230;</p>
                     <p class="card__text">288 people</p>
+                    <p class="card__percent">+1%&#8593;</p>
                 </div>
             </div>
 
             <div class="audience">
                 <h2 class="subtitle">Audience reach</h2>
+                <form>
+                    <input id="date" type="date" value="2020-01-31">
+                </form>
+                <p class="audience__text-left">Total</p>
+                <p class="audience__text-right">Follower</p>
                 <img src="./src/images/charts/audience.png"> 
             </div>
 
             <div class="reach">
                 <h2 class="subtitle">Reach by device</h2>
+                <p class="reach__text-top">Desktop</p>
+                <p class="reach__text-bottom">Mobile views</p>
                 <img src="./src/images/charts/reach.png">
             </div>
 
             <div class="gender">
                 <h2 class="subtitle">Gender / Age</h2>
+                <p class="gender__text-left">women</p>
+                <p class="gender__text-right">man</p>
                 <img src="./src/images/charts/gender.png">
             </div>
 
             <div class="geo">
                 <h2 class="subtitle">Geo</h2>
+                <p class="geo__text-top">Country</p>
+                <p class="geo__text-bottom">City</p>
                 <img src="./src/images/charts/geo.png">
             </div>
         </div>

@@ -3,6 +3,18 @@
    /* background-color: hotpink;*/
 
    .subtitle {   
-    @include componentTitle;
+     @include componentTitle;
    }
+
+    &__text-top {
+        @include text;
+        top: 90px;
+        left: 200px;
+    }
+
+    &__text-bottom {
+        @include text;
+        bottom: 110px;
+        left: 200px;
+    }
 }

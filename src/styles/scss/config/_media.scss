@@ -1,15 +1,69 @@
-/*@media only screen and (max-width: 1024px) {
-    
-}*/
-
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 1024px) {
     .app {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 80%;
         height: 100%;
         padding: 0;
+    }
+    .sidebar {
+        display: none;
+        order: -1;
+    }
+    .gamburger {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    .wrap {
+        margin: 0;
+    }
+
+    .app {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 100px repeat(5, 280px);
+        grid-template-areas: 
+                            'header header header'
+                            'card card card'
+                            'audience audience audience'
+                            'reach geo geo'
+                            'gender gender gender';
+        grid-gap: 30px;                    
+        width: 70%;
+        height: 100%;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .card {
+        grid-area: card;
+        height: 200px;
+    }
+
+    .audience {
+        grid-area: audience;
+        margin: auto;
+    }
+
+    .reach {
+        grid-area: reach;
+        margin: auto 90px;
+    }
+
+    .geo {
+        grid-area: geo;
+        margin: auto;
+    }
+
+    .gender {
+        grid-area: gender;
+        margin: auto;
     }
 
     .sidebar {
@@ -26,15 +80,50 @@
 @media screen and (max-width: 576px) and (max-height: 896px) {
     
     .app {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 100px repeat(5, 250px);
+        grid-template-areas: 
+                            'header header header'
+                            'card card card'
+                            'audience audience audience'
+                            'reach geo geo'
+                            'gender gender gender';
+        grid-gap: 30px;                    
+        width: 63%;
         height: 100%;
-        padding: 0;
     }
 
     .header {
+        grid-area: header;
         margin-bottom: 2em;
     }
+
+    .card {
+        grid-area: card;
+        height: 200px;
+    }
+
+    .audience {
+        grid-area: audience;
+        margin: auto;
+    }
+
+    .reach {
+        grid-area: reach;
+        margin: auto 90px;
+    }
+
+    .geo {
+        grid-area: geo;
+        margin: auto;
+    }
+
+    .gender {
+        grid-area: gender;
+        margin: auto;
+    }
+
 
     .sidebar {
         display: none;

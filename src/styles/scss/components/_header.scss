@@ -5,6 +5,7 @@
     justify-content: space-between;
     font-family: 'Gilroy' sans-serif;
     width: 100%;
+    padding-top: 20px;
 
     &_form {
         display: flex;
@@ -28,6 +29,7 @@
         font-size: 20px;
         line-height: 24px;
         color: #4F4F4F;
+        margin: auto;
     }
 }
 
@@ -43,3 +45,15 @@ input[type="search"] {
     box-sizing: border-box;
     border-radius: 8px;
 }    
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

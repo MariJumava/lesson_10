@@ -5,4 +5,17 @@
     .subtitle {
         @include componentTitle;
     }
+
+    &__text-top {
+        @include text;
+        top: 25px;
+        left: 210px;
+    }
+    
+    &__text-bottom {
+        @include text;
+        top: 25px;
+        left: 280px;
+        color: #979797;
+    }
 }

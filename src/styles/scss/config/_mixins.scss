@@ -8,3 +8,37 @@
     font-weight: 700;
     letter-spacing: 0.5px;
 }
+
+@mixin componentPoint {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@mixin componentText {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+@mixin componentPercent {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #979797;
+}
+
+@mixin text {
+    position: absolute;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+}

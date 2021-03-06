@@ -2,11 +2,27 @@
     position: relative;
     grid-column: 2 / 4;
     grid-row: 3;
-    
-    
-   /* background-color: rgb(45, 0, 128);*/
 
    .subtitle { 
-    @include componentTitle;
+        @include componentTitle;
    }
+
+   &__text-left {
+        @include text;
+        top: 35px;
+        left: 590px;
+    }
+
+   &__text-right {
+        @include text;
+        top: 35px;
+        left: 650px;
+    }
+}
+
+
+input[type="date"] {
+    position: absolute;
+    top: 30px;
+    left: 400px;
 }
